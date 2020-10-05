@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&display=swap');
+
+/* html, body {
+  height: 50%;
+} */
+
+html {
+  margin: 0 0;
+  height: 100%;
+}
+
+body {
+  background-image: url(https://picsum.photos/g/3000/2000);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+}
+
+div.panel{
+  /* position: sticky;
+  top: 0; */
+  background-color: black;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2{
+  padding-top: 10px;
+}
+progress[value] {
+  width:500px;
+  height: 50px;
+}
+
+.HousemateDetails {
+  box-sizing: border-box;
+  padding: 15px 13px 26px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,.09);
+  padding: 40px 0;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  margin: 30px auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.HousemateDetails .picture {
+  display: inline-block;
+  height: 129px;
+  width: 130px;
+  margin: 20px 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.HousemateDetails h1 {
+  text-align: Right;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.HousemateDetails .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.HousemateDetails:hover .picture::before {
+  height: 100%;
+}
+
+.HousemateDetails .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.HousemateDetails .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.HousemateDetails:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.HousemateDetails .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.HousemateDetails .voteHere {
+  width: 100%;
+  padding: 0;
+  height: 15%;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.HousemateDetails:hover .voteHere {
+  bottom: 0;
+}
+
+.HousemateDetails .voteHere h3{ 
+  display: inline-block;
+}
+
+.HousemateDetails .voteHere h3{
+  padding: 0 20px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.HousemateDetail .voteHere:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+  
+/* .voteHere{
+  display: flex;
+} */
+
+div.leaderboard{
+  background-color: green;
+  color: white;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div.leaderboard h2{ 
+  padding-bottom: 10px;
+}
+
+div.leaderboard :hover{ 
+  cursor: pointer;
+}
+
+.winner{
+  background-color: rgb(52, 66, 39);
+  border-radius: 10px;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  /* margin-bottom: 50px; */
+}
